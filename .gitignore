@@ -1,0 +1,15 @@
+# PlatformIO
+.pio/
+.vscode/
+
+# Binaries / firmware artifacts
+*.bin
+*.elf
+*.map
+
+# Local runtime/config artifacts
+spiffs.bin
+firmware.factory.bin
+
+# Keep template secrets in repo; do not add custom local secrets copies
+secrets.local.h
