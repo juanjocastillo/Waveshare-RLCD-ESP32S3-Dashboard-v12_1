@@ -1,6 +1,6 @@
 # RLCD42 Weather Dashboard (ESP32-S3) - V12.1.YT
 
-Dashboard meteorológico para la **Waveshare ESP32-S3 RLCD 4.2** con pantalla reflectiva, UI web local, radio por internet, ISS tracker y OTA.
+Dashboard meteorolï¿½gico para la **Waveshare ESP32-S3 RLCD 4.2** con pantalla reflectiva, UI web local, radio por internet, ISS tracker y OTA.
 
 > Estado del proyecto: **V12.1.YT estable**
 
@@ -26,13 +26,14 @@ Plataforma principal:
 - **Waveshare ESP32-S3 RLCD 4.2"**
 - Pantalla RLCD monocromatica (400x300 en panel, area de imagen usada en modo foto: **400x272**)
 - Sensor interno de temperatura/humedad
-- medicion de batería
+- medicion de baterï¿½a
 - buzzer / salida de audio para beeps
 - salida de audio para radio streaming
 
 Referencias:
 
-- Ficha del fabricante (producto): <https://www.waveshare.com/esp32-s3-rlcd-4.2.htm?srsltid=AfmBOoo58n7GXDbdSR9f_E71tCNEj3zZmV5xePfc_ZuCjhvvjHB0WbWA>\n- Documentacion técnica: <https://docs.waveshare.com/ESP32-S3-RLCD-4.2>
+- Ficha del fabricante (producto): <https://www.waveshare.com/esp32-s3-rlcd-4.2.htm>
+- Documentacion tecnica: <https://docs.waveshare.com/ESP32-S3-RLCD-4.2>
 
 ---
 
@@ -53,10 +54,10 @@ Incluye:
 El firmware usa 14 pantallas:
 
 1. **Principal**  
-   Hora/fecha, datos generales, batería, estádo basico.
+   Hora/fecha, datos generales, baterï¿½a, estï¿½do basico.
 
 2. **Dashboard KUMA**  
-   Vista resumida con telemetría/estádo de servicios.
+   Vista resumida con telemetrï¿½a/estï¿½do de servicios.
 
 3. **Imagen**  
    Modo imagen online por tema o imagen fija subida.
@@ -65,34 +66,34 @@ El firmware usa 14 pantallas:
    Visualizacion de hora en zonas configuradas.
 
 5. **Clima actual**  
-   Condiciones meteorológicas actuales.
+   Condiciones meteorolï¿½gicas actuales.
 
-6. **Pronóstico por hora**  
-   Pronóstico horario.
+6. **Pronï¿½stico por hora**  
+   Pronï¿½stico horario.
 
-7. **Pronóstico diario**  
-   Pronóstico por días.
+7. **Pronï¿½stico diario**  
+   Pronï¿½stico por dï¿½as.
 
 8. **Astronomia**  
-   Datos astronomicos (salida/puestá, fase lunar, etc.).
+   Datos astronomicos (salida/puestï¿½, fase lunar, etc.).
 
-9. **Gráfico temperatura**  
+9. **Grï¿½fico temperatura**  
    Historial de sensor interno (ventana rodante).
 
-10. **Gráfico humedad**  
+10. **Grï¿½fico humedad**  
     Historial de humedad interna (ventana rodante).
 
 11. **Sistema**  
     Red, IP, uptime, sync, sensor y firmware.
 
 12. **Redes WiFi**  
-    Informacion/escaneo de redes segun configuración.
+    Informacion/escaneo de redes segun configuraciï¿½n.
 
 13. **ISS**  
     Mapa ISS, distancia a ubicacion local y alertas sonoras de aproximacion.
 
 14. **Radio**  
-    Streaming por URL o Radio Browser, filtros, presets y estádo de reproducción.
+    Streaming por URL o Radio Browser, filtros, presets y estï¿½do de reproducciï¿½n.
 
 ---
 
@@ -102,19 +103,19 @@ Al conectar el equipo a WiFi, se sirve una UI web local (por IP LAN) con navegac
 
 ### Flujo WiFi Manager
 
-- En el primer arranque, la configuración de red se realiza por portal cautivo (WiFiManager).
+- En el primer arranque, la configuraciï¿½n de red se realiza por portal cautivo (WiFiManager).
 - Una vez conectado, el panel local queda disponible en la IP del dispositivo.
-- El acceso web está protegido con:
+- El acceso web estï¿½ protegido con:
   - **Usuario:** `admin`
-  - **Contraseña:** la misma clave de la red WiFi configurada en WiFiManager.
+  - **Contraseï¿½a:** la misma clave de la red WiFi configurada en WiFiManager.
 - Si actualizas la clave del WiFi, el acceso web se sincroniza con esa nueva clave.
 
 ### Secciones principales de la Web UI
 
 - **Panel principal**
-  - estádo general
+  - estï¿½do general
   - volumen general
-  - toggles de beeps (Batería / ISS)
+  - toggles de beeps (Baterï¿½a / ISS)
   - selector de pantalla
 
 - **Imagen (`/image`)**
@@ -131,7 +132,7 @@ Al conectar el equipo a WiFi, se sirve una UI web local (por IP LAN) con navegac
 - **Radio (`/radio`)**
   - pais
   - filtro por tipo de stream (MP3/AAC/AAC+/Any)
-  - bitrate máximo
+  - bitrate mï¿½ximo
   - lista de emisoras por Radio Browser
   - URL manual
   - reproducir/stop
@@ -145,7 +146,7 @@ Actualizacion de firmware por navegador (UI local de Sistema):
 
 - seleccion de `.bin`
 - validacion y proceso OTA
-- reinicio automatico con restáuracion de estádo
+- reinicio automatico con restï¿½uracion de estï¿½do
 
 Convencion actual de nombre de firmware:
 
@@ -206,7 +207,7 @@ Modificaciones propias sobre STL:
 Modificaciones y evolucion (este fork):
 
 - **Juanjo Castillo / RLCD42**
-- Ajustes de UI, radio, ISS, OTA e integración general del proyecto
+- Ajustes de UI, radio, ISS, OTA e integraciï¿½n general del proyecto
 
 Agradecimientos:
 
@@ -220,7 +221,7 @@ Agradecimientos:
 ## Roadmap sugerido (YouTube/GitHub)
 
 - publicacion de STL finales
-- vídeo de armado y flashing
+- vï¿½deo de armado y flashing
 - demo completa de las 14 pantallas
 - demo OTA en vivo
 
@@ -232,7 +233,8 @@ Este repositorio se publica bajo licencia **MIT**.
 
 - Ver archivo: [LICENSE](LICENSE)
 - Esta licencia aplica a las modificaciones y material propio de este fork.
-- Los componentes de terceros (firmware base, librerias, diseños STL base, fuentes y APIs) mantienen sus propias licencias y condiciones de uso.
+- Los componentes de terceros (firmware base, librerias, diseï¿½os STL base, fuentes y APIs) mantienen sus propias licencias y condiciones de uso.
+
 
 
 
