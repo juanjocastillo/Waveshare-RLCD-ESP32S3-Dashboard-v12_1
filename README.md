@@ -1,6 +1,6 @@
-﻿# RLCD42 Weather Dashboard (ESP32-S3) - V12.1.YT
+﻿# RLCD42 Dashboard (ESP32-S3) - V12.1.YT
 
-Dashboard meteorologico para la Waveshare ESP32-S3 RLCD 4.2 con pantalla reflectiva, UI web local, radio por internet, ISS tracker y OTA.
+Dashboard para la Waveshare ESP32-S3 RLCD 4.2 con pantalla reflectiva, UI web local, radio por internet, ISS tracker y OTA.
 
 > Estado del proyecto: V12.1.YT estable
 
@@ -206,10 +206,10 @@ Gabinete 3D base:
 
 Modificaciones propias sobre STL:
 
-- `back_witharm.stl`
+- `RLCD-4.2-jjc2-back-whitharm.stl`
   - Abertura adicional para exponer GPIO
   - Ranuras para ventilacion / salida de sonido del parlante
-- `arm_slim.stl`
+- `RLCD-4.2-jjc2-arm.stl`
   - Refuerzo interno agregado
   - Caladura para colgar en tornillo
   - Dos huecos para imanes de neodimio de 8x2 mm
@@ -235,3 +235,5 @@ Este repositorio se publica bajo licencia MIT.
 - Ver archivo: [LICENSE](LICENSE)
 - Esta licencia aplica a las modificaciones y material propio de este fork.
 - Los componentes de terceros (firmware base, librerias, disenos STL base, fuentes y APIs) mantienen sus propias licencias y condiciones de uso.
+
+
